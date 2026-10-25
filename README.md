@@ -141,7 +141,7 @@ Share of large errors caught, by AC budget:
 **Reproduce.**
 
 ```bash
-conda activate genco            # needs gridfm-graphkit, gridfm-datakit and the Julia setup from the GENCO explorer notebook
+conda activate genco            
 python genco_noise.py           # runs all 9 checkpoints, writes 6 small CSVs per checkpoint to genco_out/clean/<size>_<seed>/
 python make_figures.py clean    # writes figures and results_table.csv to genco_out/clean/figures/
 ```
