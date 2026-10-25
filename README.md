@@ -141,7 +141,7 @@ Share of large errors caught, by AC budget:
 **Reproduce.**
 
 ```bash
-pip install -r requirements.txt # pinned versions; install order and the one-time Julia setup are in the file's header
+pip install -r requirements.txt 
 python genco_noise.py           # runs all 9 checkpoints, writes 6 small CSVs per checkpoint to genco_out/clean/<size>_<seed>/
 python make_figures.py clean    # writes figures and results_table.csv to genco_out/clean/figures/
 ```
