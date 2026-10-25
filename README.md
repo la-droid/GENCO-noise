@@ -35,8 +35,8 @@ I test both under load noise, a natural out-of-distribution stress, since the ch
 
 | Signal | Definition |
 |---|---|
-| Embedding distance | Mahalanobis distance of a bus's final-layer embedding to a Gaussian fitted for that bus on a reference set at σ = 0.2 (Ledoit-Wolf shrinkage). One simple, unsupervised way of reading the embeddings: it measures how unusual a state is, not how wrong the prediction is |
-| Power-balance error (PBE) | GENCO's own residual per bus, in MVA |
+| Embedding distance | Mahalanobis distance of a bus's final-layer embedding to a Gaussian fitted for that bus on a reference set at σ = 0.2 ([Ledoit-Wolf shrinkage](https://doi.org/10.1016/S0047-259X(03)00096-4)). One simple, unsupervised way of reading the embeddings: it measures how unusual a state is, not how wrong the prediction is |
+| Power-balance error (PBE) | The residual of the power-flow equations at GENCO's predicted solution, per bus in MVA, as defined in the [GENCO paper](https://arxiv.org/abs/2608.09921) and returned by [gridfm-graphkit](https://github.com/gridfm/gridfm-graphkit) |
 | All-loads input distance | Mahalanobis distance of a sample's complete load vector (active and reactive load of every bus). The fair input-only baseline for the embedding, since the embedding is computed from the same inputs |
 | Bus prior | Rank buses by their usual error at the training noise level, ignoring the sample. The baseline any error warning has to beat |
 
