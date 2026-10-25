@@ -169,3 +169,17 @@ Settings (grids, noise levels, sample counts, seeds, the 5% alarm rate, the top 
 3. **A larger grid** (e.g. the 500-bus GOC case), to see whether PBE's advantage grows with grid size.
 4. **Turn the fallback into a rule.** Calibrate a fixed PBE threshold at the training noise level, add a total-load baseline, and measure the wall-clock time saved against running AC on every case.
 5. **Measurement noise and voltage-magnitude error**, to widen the scope beyond load noise and voltage angles.
+
+## Resources
+
+**Papers**
+- [GENCO: A Unified Neural Solver Embedded in a Development Framework for Steady-State Grid Analysis](https://arxiv.org/abs/2608.09921) (2026). The model studied here, and the proposed PBE-based AC fallback.
+- [Trustworthiness Layer for Foundation Models in Power Systems: Application to N-k Contingency Screening](https://arxiv.org/abs/2602.07995) (Alcántara and Chatzivasileiadis, 2026). Conformal prediction intervals for GridFM.
+- [Physics-Informed but Not Physics-Consistent: Error Geometry and Subspace Projection for Neural AC Power Flow](https://arxiv.org/abs/2610.05959) (2026). How voltage errors relate to the power-balance residual.
+- [A well-conditioned estimator for large-dimensional covariance matrices](https://doi.org/10.1016/S0047-259X(03)00096-4) (Ledoit and Wolf, 2004). The covariance shrinkage used for the distances.
+
+**Code, models and data**
+- [gridfm-graphkit](https://github.com/gridfm/gridfm-graphkit). Loads and runs GENCO and returns PBE and the embeddings.
+- [gridfm-datakit](https://github.com/gridfm/gridfm-datakit). Generates the AC-solved load-noise data.
+- [gridfm/genco-pf-datakit](https://huggingface.co/gridfm/genco-pf-datakit). The pretrained GENCO power-flow checkpoints (nine for each grid used here).
+- [PGLib-OPF](https://github.com/power-grid-lib/pglib-opf). The IEEE 14-, 30- and 118-bus benchmark grids (CC BY 4.0).
