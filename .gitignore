@@ -1,0 +1,6 @@
+genco_ckpt/
+genco_data/
+__pycache__/
+.ruff_cache/
+.crossnote/
+*.log

@@ -1,0 +1,82 @@
+metric,grid,mean,min,max,count,detector,noise,score,budget
+median |Va error| at sigma=0.5 / at sigma=0.2,case118_ieee,1.7814677333333333,1.3936479,2.2581236,9,,,,
+median |Va error| at sigma=0.5 / at sigma=0.2,case14_ieee,0.9265572522222223,0.77900624,0.97498685,9,,,,
+median |Va error| at sigma=0.5 / at sigma=0.2,case30_ieee,0.8542207833333334,0.7750071,0.9314846,9,,,,
+% of samples flagged,case118_ieee,95.27777777777777,87.91666666666667,100.0,9,emb,0.3,,
+% of samples flagged,case118_ieee,100.0,100.0,100.0,9,emb,0.5,,
+% of samples flagged,case118_ieee,9.814814814814815,3.3333333333333335,12.916666666666668,9,pbe,0.3,,
+% of samples flagged,case118_ieee,38.148148148148145,16.666666666666664,48.333333333333336,9,pbe,0.5,,
+% of samples flagged,case118_ieee,100.0,100.0,100.0,9,vec,0.3,,
+% of samples flagged,case118_ieee,100.0,100.0,100.0,9,vec,0.5,,
+% of samples flagged,case14_ieee,49.351851851851855,42.916666666666664,56.25,9,emb,0.3,,
+% of samples flagged,case14_ieee,99.01960784313727,97.89915966386556,99.57983193277312,9,emb,0.5,,
+% of samples flagged,case14_ieee,7.592592592592592,3.75,10.416666666666668,9,pbe,0.3,,
+% of samples flagged,case14_ieee,12.184873949579831,4.621848739495799,15.966386554621849,9,pbe,0.5,,
+% of samples flagged,case14_ieee,94.72222222222223,94.16666666666669,95.0,9,vec,0.3,,
+% of samples flagged,case14_ieee,100.0,100.0,100.0,9,vec,0.5,,
+% of samples flagged,case30_ieee,50.0232450023245,36.82008368200837,65.69037656903765,9,emb,0.3,,
+% of samples flagged,case30_ieee,100.0,100.0,100.0,9,emb,0.5,,
+% of samples flagged,case30_ieee,5.671780567178057,2.092050209205021,8.786610878661087,9,pbe,0.3,,
+% of samples flagged,case30_ieee,12.64367816091954,5.172413793103448,18.103448275862068,9,pbe,0.5,,
+% of samples flagged,case30_ieee,95.25801952580194,94.14225941422592,96.23430962343096,9,vec,0.3,,
+% of samples flagged,case30_ieee,100.0,100.0,100.0,9,vec,0.5,,
+"error of top 10% ranked buses vs all (x), overall",case118_ieee,2.2477240074074074,1.8875138333333334,2.7151791333333333,9,,,PBE,
+"error of top 10% ranked buses vs all (x), overall",case118_ieee,1.5963252185185184,1.3701841166666666,1.8503064333333334,9,,,bus_prior,
+"error of top 10% ranked buses vs all (x), overall",case118_ieee,0.8609399305555555,0.6799626449999999,1.0257878866666668,9,,,emb_score,
+"error of top 10% ranked buses vs all (x), overall",case14_ieee,1.1719068994444446,0.9600912950000001,1.3222727166666666,9,,,PBE,
+"error of top 10% ranked buses vs all (x), overall",case14_ieee,1.2749035277777778,1.2473324666666665,1.3114400166666667,9,,,bus_prior,
+"error of top 10% ranked buses vs all (x), overall",case14_ieee,1.0783165590740742,1.0066808,1.2316440666666668,9,,,emb_score,
+"error of top 10% ranked buses vs all (x), overall",case30_ieee,1.228783611111111,1.1266351666666667,1.3012677833333333,9,,,PBE,
+"error of top 10% ranked buses vs all (x), overall",case30_ieee,1.2955648277777778,1.2713728666666666,1.3375123166666667,9,,,bus_prior,
+"error of top 10% ranked buses vs all (x), overall",case30_ieee,1.00796007,0.8672129516666667,1.1107736,9,,,emb_score,
+"same, ranked within each bus",case118_ieee,2.040817424103066,1.8792337377866108,2.2769595980644226,9,,,PBE,
+"same, ranked within each bus",case118_ieee,1.0572645288926585,0.9200112620989481,1.2593706647555034,9,,,emb_score,
+"same, ranked within each bus",case14_ieee,1.317253468213258,1.1590873797734578,1.5946107308069866,9,,,PBE,
+"same, ranked within each bus",case14_ieee,1.1894037701465465,1.0770982305208843,1.4039814273516338,9,,,emb_score,
+"same, ranked within each bus",case30_ieee,1.2490730992069952,1.1351996660232544,1.3731833497683208,9,,,PBE,
+"same, ranked within each bus",case30_ieee,1.1540719866752625,1.0382371246814728,1.2281547983487446,9,,,emb_score,
+"Spearman with noise level, inside a bus",case118_ieee,0.25697071383205233,0.2006805124792712,0.3518764028506556,9,,,PBE,
+"Spearman with noise level, inside a bus",case118_ieee,0.938544343472616,0.9337473265288452,0.9448388250689508,9,,,emb_score,
+"Spearman with noise level, inside a bus",case14_ieee,-0.10365327564836596,-0.3767869130168523,0.0728052262274379,9,,,PBE,
+"Spearman with noise level, inside a bus",case14_ieee,0.9209159479955714,0.9157816891329952,0.9246340866584638,9,,,emb_score,
+"Spearman with noise level, inside a bus",case30_ieee,-0.23536099051598505,-0.401222839325678,-0.0018356515681608,9,,,PBE,
+"Spearman with noise level, inside a bus",case30_ieee,0.9330789071342761,0.9288071555282716,0.939615464390512,9,,,emb_score,
+"Spearman with |Va error| at fixed noise, inside a bus",case118_ieee,0.4933142508294298,0.3726945193109873,0.5690826945253227,9,,,PBE,
+"Spearman with |Va error| at fixed noise, inside a bus",case118_ieee,0.020963717028968865,-0.1122664559925135,0.1122763869454773,9,,,emb_score,
+"Spearman with |Va error| at fixed noise, inside a bus",case14_ieee,0.7044624699534088,0.5512305710535683,0.8159010534587631,9,,,PBE,
+"Spearman with |Va error| at fixed noise, inside a bus",case14_ieee,0.3311222517522351,0.0707794431404655,0.4701073615657123,9,,,emb_score,
+"Spearman with |Va error| at fixed noise, inside a bus",case30_ieee,0.432802157034197,0.318904207933192,0.5087604689110479,9,,,PBE,
+"Spearman with |Va error| at fixed noise, inside a bus",case30_ieee,0.25286971030243366,0.149632236198141,0.3131138983564875,9,,,emb_score,
+error in the top score decile vs the bus average (x),case118_ieee,2.040233133333333,1.8783703,2.2764568,9,,,PBE,
+error in the top score decile vs the bus average (x),case118_ieee,1.0572372666666667,0.919941,1.2592694,9,,,emb_score,
+error in the top score decile vs the bus average (x),case14_ieee,1.3164913444444446,1.1591668,1.591637,9,,,PBE,
+error in the top score decile vs the bus average (x),case14_ieee,1.188538111111111,1.0766455,1.4022508,9,,,emb_score,
+error in the top score decile vs the bus average (x),case30_ieee,1.2483165555555555,1.1342441,1.3718284,9,,,PBE,
+error in the top score decile vs the bus average (x),case30_ieee,1.1541126000000002,1.0379244,1.2287782,9,,,emb_score,
+share of large errors caught with this AC budget,case118_ieee,0.24287295784265017,0.125,0.3076923076923077,9,,,emb,0.1
+share of large errors caught with this AC budget,case118_ieee,0.4297325683623028,0.24375,0.5201465201465202,9,,,emb,0.2
+share of large errors caught with this AC budget,case118_ieee,0.5711732979655364,0.3,0.6813186813186813,9,,,emb,0.3
+share of large errors caught with this AC budget,case118_ieee,0.5145890818304729,0.4640287769784172,0.6625,9,,,pbe,0.1
+share of large errors caught with this AC budget,case118_ieee,0.8262444423835406,0.7073170731707317,0.94375,9,,,pbe,0.2
+share of large errors caught with this AC budget,case118_ieee,0.9459156477273604,0.8864468864468864,0.9875,9,,,pbe,0.3
+share of large errors caught with this AC budget,case118_ieee,0.20570679010644807,0.1125,0.2600732600732601,9,,,vec,0.1
+share of large errors caught with this AC budget,case118_ieee,0.4011420345562952,0.225,0.4871794871794871,9,,,vec,0.2
+share of large errors caught with this AC budget,case118_ieee,0.5345604024123669,0.275,0.6373626373626373,9,,,vec,0.3
+share of large errors caught with this AC budget,case14_ieee,0.24242790441395717,0.1864406779661017,0.2842639593908629,9,,,emb,0.1
+share of large errors caught with this AC budget,case14_ieee,0.42353099892033297,0.3559322033898305,0.482233502538071,9,,,emb,0.2
+share of large errors caught with this AC budget,case14_ieee,0.5646292184047418,0.4808743169398907,0.647887323943662,9,,,emb,0.3
+share of large errors caught with this AC budget,case14_ieee,0.5485663879328109,0.4101123595505618,0.6717171717171717,9,,,pbe,0.1
+share of large errors caught with this AC budget,case14_ieee,0.7773839164782503,0.5561797752808989,0.9343434343434344,9,,,pbe,0.2
+share of large errors caught with this AC budget,case14_ieee,0.8499669452782563,0.6629213483146067,0.9624413145539906,9,,,pbe,0.3
+share of large errors caught with this AC budget,case14_ieee,0.20668467629628084,0.1639344262295081,0.2461538461538461,9,,,vec,0.1
+share of large errors caught with this AC budget,case14_ieee,0.35925483913657164,0.2841530054644808,0.4192307692307692,9,,,vec,0.2
+share of large errors caught with this AC budget,case14_ieee,0.4981486569836664,0.4098360655737705,0.5846153846153846,9,,,vec,0.3
+share of large errors caught with this AC budget,case30_ieee,0.2575213920280171,0.2,0.3612903225806451,9,,,emb,0.1
+share of large errors caught with this AC budget,case30_ieee,0.4209799980754718,0.3351648351648351,0.5096774193548387,9,,,emb,0.2
+share of large errors caught with this AC budget,case30_ieee,0.5755686605177169,0.4903225806451612,0.6647058823529411,9,,,emb,0.3
+share of large errors caught with this AC budget,case30_ieee,0.39239748275710196,0.3181818181818182,0.4945054945054945,9,,,pbe,0.1
+share of large errors caught with this AC budget,case30_ieee,0.531654161647954,0.4431818181818182,0.6428571428571429,9,,,pbe,0.2
+share of large errors caught with this AC budget,case30_ieee,0.6226990847908651,0.50625,0.6903225806451613,9,,,pbe,0.3
+share of large errors caught with this AC budget,case30_ieee,0.2153657852926639,0.1648351648351648,0.2580645161290322,9,,,vec,0.1
+share of large errors caught with this AC budget,case30_ieee,0.4088960167156529,0.3406593406593406,0.4777777777777778,9,,,vec,0.2
+share of large errors caught with this AC budget,case30_ieee,0.553544554791412,0.4709677419354838,0.6444444444444445,9,,,vec,0.3
